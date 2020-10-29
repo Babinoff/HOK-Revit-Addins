@@ -35,7 +35,7 @@ namespace HOK.MissionControl
         public static Dictionary<string, DateTime> SynchTime { get; set; } = new Dictionary<string, DateTime>();
         public static Dictionary<string, DateTime> OpenTime { get; set; } = new Dictionary<string, DateTime>();
 #if RELEASE2015 || RELEASE2016 || RELEASE2017
-        // (Konrad) We are not going to process warnings here.
+        // (Konr ad) We arenot going to process warnings here.
 #else
         public static Dictionary<string, WarningItem> Warnings { get; set; } = new Dictionary<string, WarningItem>();
 #endif

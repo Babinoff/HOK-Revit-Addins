@@ -18,6 +18,10 @@ namespace HOK.AddInsInstaller
         public static ToolNames[] tools2015 = new ToolNames[] { ToolNames.SmartBCF, ToolNames.FileMonitor, ToolNames.ProjectMonitor, ToolNames.ElementMover, ToolNames.ProjectReplicator, ToolNames.CaseIssueTracker, ToolNames.ArupIssueTracker };
         public static ToolNames[] tools2016 = new ToolNames[] { ToolNames.SmartBCF, ToolNames.FileMonitor, ToolNames.ProjectMonitor, ToolNames.ElementMover, ToolNames.ProjectReplicator,  ToolNames.CaseIssueTracker, ToolNames.ArupIssueTracker };
         public static ToolNames[] tools2017 = new ToolNames[] { ToolNames.SmartBCF, ToolNames.ElementMover, ToolNames.SheetManager, ToolNames.ProjectReplicator, ToolNames.ProjectMonitor };
+        public static ToolNames[] tools2018 = new ToolNames[] { ToolNames.SmartBCF, ToolNames.ElementMover, ToolNames.SheetManager, ToolNames.ProjectReplicator, ToolNames.ProjectMonitor };
+        public static ToolNames[] tools2019 = new ToolNames[] { ToolNames.SmartBCF, ToolNames.ElementMover, ToolNames.SheetManager, ToolNames.ProjectReplicator, ToolNames.ProjectMonitor };
+        public static ToolNames[] tools2020 = new ToolNames[] { ToolNames.SmartBCF, ToolNames.ElementMover, ToolNames.SheetManager, ToolNames.ProjectReplicator, ToolNames.ProjectMonitor, ToolNames.In_delo_Application };
+
 
         public static Dictionary<string/*versionNumber*/, ToolPackageInfo> GetToolPackageInfo()
         {
@@ -27,30 +31,45 @@ namespace HOK.AddInsInstaller
                 ProgressWindow pWindow = new ProgressWindow();
                 pWindow.Show();
 
-                pWindow.SetStatusLabel("Gathering information about installed components in 2013. . .");
-                ToolPackageInfo toolPackage2013 = new ToolPackageInfo("2013");
-                toolPackage2013.SetToolInfo(tools2013, pWindow);
-                toolPackageDictionary.Add("2013", toolPackage2013);
+                //pWindow.SetStatusLabel("Gathering information about installed components in 2013. . .");
+                //ToolPackageInfo toolPackage2013 = new ToolPackageInfo("2013");
+                //toolPackage2013.SetToolInfo(tools2013, pWindow);
+                //toolPackageDictionary.Add("2013", toolPackage2013);
 
-                pWindow.SetStatusLabel("Gathering information about installed components in 2014. . .");
-                ToolPackageInfo toolPackage2014 = new ToolPackageInfo("2014");
-                toolPackage2014.SetToolInfo(tools2014, pWindow);
-                toolPackageDictionary.Add("2014", toolPackage2014);
+                //pWindow.SetStatusLabel("Gathering information about installed components in 2014. . .");
+                //ToolPackageInfo toolPackage2014 = new ToolPackageInfo("2014");
+                //toolPackage2014.SetToolInfo(tools2014, pWindow);
+                //toolPackageDictionary.Add("2014", toolPackage2014);
 
-                pWindow.SetStatusLabel("Gathering information about installed components in 2015. . .");
-                ToolPackageInfo toolPackage2015 = new ToolPackageInfo("2015");
-                toolPackage2015.SetToolInfo(tools2015, pWindow);
-                toolPackageDictionary.Add("2015", toolPackage2015);
+                //pWindow.SetStatusLabel("Gathering information about installed components in 2015. . .");
+                //ToolPackageInfo toolPackage2015 = new ToolPackageInfo("2015");
+                //toolPackage2015.SetToolInfo(tools2015, pWindow);
+                //toolPackageDictionary.Add("2015", toolPackage2015);
 
-                pWindow.SetStatusLabel("Gathering information about installed components in 2016. . .");
-                ToolPackageInfo toolPackage2016 = new ToolPackageInfo("2016");
-                toolPackage2016.SetToolInfo(tools2016, pWindow);
-                toolPackageDictionary.Add("2016", toolPackage2016);
+                //pWindow.SetStatusLabel("Gathering information about installed components in 2016. . .");
+                //ToolPackageInfo toolPackage2016 = new ToolPackageInfo("2016");
+                //toolPackage2016.SetToolInfo(tools2016, pWindow);
+                //toolPackageDictionary.Add("2016", toolPackage2016);
 
                 pWindow.SetStatusLabel("Gathering information about installed components in 2017. . .");
                 ToolPackageInfo toolPackage2017 = new ToolPackageInfo("2017");
                 toolPackage2017.SetToolInfo(tools2017, pWindow);
                 toolPackageDictionary.Add("2017", toolPackage2017);
+
+                pWindow.SetStatusLabel("Gathering information about installed components in 2018. . .");
+                ToolPackageInfo toolPackage2018 = new ToolPackageInfo("2018");
+                toolPackage2018.SetToolInfo(tools2018, pWindow);
+                toolPackageDictionary.Add("2018", toolPackage2018);
+
+                pWindow.SetStatusLabel("Gathering information about installed components in 2019. . .");
+                ToolPackageInfo toolPackage2019 = new ToolPackageInfo("2019");
+                toolPackage2019.SetToolInfo(tools2019, pWindow);
+                toolPackageDictionary.Add("2019", toolPackage2019);
+
+                pWindow.SetStatusLabel("Gathering information about installed components in 2020. . .");
+                ToolPackageInfo toolPackage2020 = new ToolPackageInfo("2020");
+                toolPackage2020.SetToolInfo(tools2020, pWindow);
+                toolPackageDictionary.Add("2020", toolPackage2020);
 
                 if (null!=pWindow) { pWindow.Close(); }
             }
@@ -551,7 +570,8 @@ namespace HOK.AddInsInstaller
         ElementFlatter,
         MissionControl,
         CaseIssueTracker,
-        ArupIssueTracker
+        ArupIssueTracker,
+        In_delo_Application
     }
 
     public static class ImageUtil
